@@ -1,29 +1,37 @@
-# vue-docker
+# docker-vue-demo
 
-## Project setup
-```
-yarn install
-```
+This is a [multi-stage builds](https://docs.docker.com/develop/develop-images/multistage-build/) example with vue.
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+## Start The Repository
 
-### Compiles and minifies for production
-```
-yarn run build
+If you clone this repo, please ignore this and go to [Build Dockerfile](#build-dockerfile).
+
+Initial the vue repository:
+
+```bash
+vue create vue-docker
 ```
 
-### Run your tests
-```
-yarn run test
+Enter the directory:
+
+```bash
+cd vue-docker
 ```
 
-### Lints and fixes files
-```
-yarn run lint
+Create the [nginx.conf](./nginx.conf) works for history mode and the [`Dockerfile`](./Dockerfile).
+
+## Build Dockerfile
+
+Build a image tagged as `vue-multi-stage-vue-demo`:
+
+```bash
+docker build -t vue-multi-stage-vue-demo .
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Try the image:
+
+```bash
+docker run --rm -it -p 8080:80 vue-multi-stage-vue-demo
+```
+
+Visit <http://loalhost:8080>.
