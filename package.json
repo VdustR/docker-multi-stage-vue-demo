@@ -1,6 +1,31 @@
 {
   "name": "docker-multi-stage-vue-demo",
   "version": "0.1.0",
+  "description": "A multi-stage builds example with vue",
+  "keywords": [
+    "docker",
+    "multi-stage",
+    "vue",
+    "router",
+    "nginx",
+    "history",
+    "spa"
+  ],
+  "homepage": "https://github.com/VdustR/docker-multi-stage-vue-demo",
+  "bugs": {
+    "url": "https://github.com/VdustR/docker-multi-stage-vue-demo/issues",
+    "email" : "VdustR@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "ViPro",
+    "email": "VdustR@gmail.com",
+    "url": "https://VdustR.github.io"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/VdustR/docker-multi-stage-vue-demo.git"
+  },
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
