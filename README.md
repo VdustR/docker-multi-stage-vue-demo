@@ -34,4 +34,4 @@ Try the image:
 docker run --rm -it -p 8080:80 vue-multi-stage-vue-demo
 ```
 
-Visit <http://loalhost:8080>.
+Visit <http://localhost:8080>.
