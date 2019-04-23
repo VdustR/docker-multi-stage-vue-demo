@@ -2,6 +2,11 @@
 
 This is a [multi-stage builds](https://docs.docker.com/develop/develop-images/multistage-build/) example with vue.
 
+It will:
+
+- build the repository with node
+- serve the distribution with nginx
+
 ## Start The Repository
 
 If you clone this repo, please ignore this and go to [Build Dockerfile](#build-dockerfile).
@@ -25,13 +30,13 @@ Create the [nginx.conf](./nginx.conf) works for history mode and the [`Dockerfil
 Build a image tagged as `vue-multi-stage-vue-demo`:
 
 ```bash
-docker build -t vue-multi-stage-vue-demo .
+docker build -t multi-stage-vue-demo .
 ```
 
 Try the image:
 
 ```bash
-docker run --rm -it -p 8080:80 vue-multi-stage-vue-demo
+docker run --rm -it -p 8080:80 multi-stage-vue-demo
 ```
 
 Visit <http://localhost:8080>.
